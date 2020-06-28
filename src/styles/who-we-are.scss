@@ -15,8 +15,12 @@
     }
 
     @media (max-width: $breakpoint-large-tablet) {
-      padding: 100px 30px;
+      padding: 260px 30px 100px;
       text-align: center;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      padding: 120px 30px 100px;
     }
   }
 

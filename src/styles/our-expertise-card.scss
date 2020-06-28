@@ -1,27 +1,93 @@
 @import "utils/vars";
 
 .card {
-  &__container {
-    position: relative;
-    top: 0;
-    left: 0;
-    max-width: 264px;
-    text-align: center;
-    transition: 0.2s linear;
+  &__grid {
+    @media (max-width: $breakpoint-large-tablet) {
+      justify-items: center;
+      display: grid;
 
-    &:hover {
-      box-shadow: 0 8px 3px -4px rgba(139, 136, 136, 0.45);
-      top: -4px;
-      left: -4px;
+      &:last-child {
+        grid-column: 1 / 3;
+      }
     }
 
-    @media (max-width: $breakpoint-large-tablet) {
-      margin-bottom: 50px;
+    @media (max-width: $breakpoint-tablet) {
+      &:last-child {
+        grid-column: auto;
+      }
     }
   }
 
+  &__container {
+    width: 275px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    box-shadow: inset 275px 0 50px rgba(0, 0, 0, 0.5), 0 20px 100px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+
+    &:hover {
+      transform: perspective(2000px) rotate(-10deg);
+      box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5), 0 10px 100px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+      width: 200px;
+      height: 325px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: #d1d0d0;
+      transform-origin: bottom;
+      transform: skewX(-45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -5px;
+      width: 5px;
+      height: 100%;
+      background: $c-lightGray;
+      transform-origin: left;
+      transform: skewY(-45deg);
+    }
+
+    &:hover .card__img-box {
+      transform: rotateY(-135deg);
+    }
+  }
+
+  &__img-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: 1s;
+    z-index: 1;
+  }
+
   &__img {
-    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: -1;
   }
 
   &__header {

@@ -2,15 +2,45 @@
 @import "utils/mixins";
 
 .case {
+  &__grid {
+    @media (max-width: $breakpoint-large-tablet) {
+      justify-items: center;
+      display: grid;
+
+      &:last-child {
+        grid-column: 1 / 3;
+      }
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      &:last-child {
+        grid-column: auto;
+      }
+    }
+  }
+
   &__container {
     text-align: center;
     max-width: 314px;
     height: 494px;
     padding: 87px 32px 32px;
-    background-color: $c-white;
     box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
     border-radius: 24px;
     box-sizing: border-box;
+    animation: animate 2s linear infinite;
+    transition: box-shadow $transition;
+
+    &--gilad {
+      background: #b4e0ee url(../images/testimonials/sparkles.png);
+    }
+
+    &--hawkins {
+      background: #eedca1 url(../images/testimonials/sparkles.png);
+    }
+
+    &--grover {
+      background: #f3afaf url(../images/testimonials/sparkles.png);
+    }
 
     @media (max-width: $breakpoint-large-tablet) {
       &:not(:last-child) {
@@ -25,7 +55,16 @@
 
     &:hover {
       box-shadow: 0 9px 18px rgba(37, 41, 49, 0.3);
-      cursor: pointer;
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 0 -64px;
     }
   }
 
@@ -45,22 +84,22 @@
 
     &--yellow::before {
       @include photo-decor-before;
-      background-color: #fcc304;
+      background-color: $bgc-yellow;
     }
 
     &--yellow::after {
       @include photo-decor-after;
-      background-color: #fcc304;
+      background-color: $bgc-yellow;
     }
 
     &--red::before {
       @include photo-decor-before;
-      background-color: #f25656;
+      background-color: $bgc-red;
     }
 
     &--red::after {
       @include photo-decor-after;
-      background-color: #f25656;
+      background-color: $bgc-red;
     }
   }
 

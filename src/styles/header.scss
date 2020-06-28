@@ -71,3 +71,9 @@
     }
   }
 }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: $transition;
+}

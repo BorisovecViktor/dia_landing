@@ -5,7 +5,7 @@
   left: -50%;
   width: 139px;
   height: 56px;
-  background-color: #56ccf2;
+  background-color: $bgc-light-blue;
   border-radius: 30px;
   transform: rotate(-60deg) translate(50%, -50%);
 }
@@ -17,7 +17,7 @@
   right: -50%;
   width: 139px;
   height: 56px;
-  background-color: #56ccf2;
+  background-color: $bgc-light-blue;
   border-radius: 30px;
   transform: rotate(-60deg) translate(-50%, 50%);
 }

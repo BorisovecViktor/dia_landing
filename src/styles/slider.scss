@@ -1,103 +1,179 @@
 @import "utils/vars";
 
+$height: 64%;
+$big_nav_width: 12%;
+$small_nav_width: 15%;
+
+$box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
+$nav_color: rgba(255, 156, 142, 0.2);
+$nav_hover_color: rgba(255, 156, 142, 0.8);
+
 .slider {
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/slider/slide-img-1.jpg);
-  background-position: center;
-  background-size: cover;
-  border-top-left-radius: 200px;
-
-  @media (max-width: $breakpoint-large-tablet) {
-    width: 80%;
-    border-top-left-radius: 100px;
-  }
-
-  @media (max-width: $breakpoint-tablet) {
-    border-top-left-radius: 50px;
+  &__container {
+    position: relative;
     width: 100%;
+    height: 0;
+    padding-bottom: $height;
+    user-select: none;
+    background-color: #1c1c1c;
+    box-shadow: $box-shadow;
   }
 
-  &__intro,
-  &__arrow {
+  &__input {
+    display: none;
+  }
+
+  &__slide-wrapper {
     position: absolute;
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 
-  &__arrow {
-    display: flex;
-    right: 547px;
-    bottom: 66px;
+  &__dots {
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 3px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+    z-index: 2;
+    cursor: pointer;
 
-    @media (max-width: $breakpoint-notebook) {
-      right: 490px;
-    }
-
-    @media (max-width: $breakpoint-large-tablet) {
-      right: 0;
-      left: 50px;
-    }
-  }
-
-  &__intro {
-    right: 257px;
-    bottom: 48px;
-    max-width: 264px;
-
-    @media (max-width: $breakpoint-notebook) {
-      right: 200px;
-    }
-
-    @media (max-width: $breakpoint-large-tablet) {
-      right: 0;
-      left: 150px;
-    }
-  }
-
-  &__title {
-    color: $c-white;
-  }
-
-  &__text {
-    margin-top: 8px;
-    font-size: 14px;
-    line-height: 20px;
-    color: $c-white;
-
-    @media (max-width: $breakpoint-large-tablet) {
-      padding-right: 10px;
+    @media screen and (max-width: 685px) {
+      width: 12px;
+      height: 12px;
     }
   }
 }
 
-.arrow {
-  &__left {
-    margin-right: 8px;
+#dot1:hover {
+  background: $bgc-red;
+}
+
+#dot2:hover {
+  background: $bgc-green;
+}
+
+#dot3:hover {
+  background: $bgc-blue;
+}
+
+#dot4:hover {
+  background: $bgc-yellow;
+}
+
+.slide {
+  &__img {
+    width: inherit;
+    height: inherit;
   }
 
-  &__left,
-  &__right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-    background-color: $c-white;
+  &__prev,
+  &__next {
+    width: $big_nav_width;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    background-color: $nav_color;
+    z-index: 2;
+    transition: 0.45s;
     cursor: pointer;
-    transition: $transition;
+    text-align: center;
 
-    &:hover,
-    &:focus {
-      background-color: $bgc-blue;
+    @media screen and (max-width: 685px) {
+      width: $small_nav_width;
     }
   }
 
-  &__left img,
-  &__right img {
-    width: 8px;
-    height: 17px;
+  &__next {
+    right: 0;
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__prev:hover,
+  &__next:hover {
+    transition: 0.3s;
+    background-color: $nav_hover_color;
+  }
+
+  &__prev span,
+  &__next span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: solid 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media screen and (max-width: 685px) {
+      border: solid 12px;
+    }
+  }
+
+  &__prev span {
+    border-color: transparent #fff transparent transparent;
+    right: 35%;
+
+    @media screen and (max-width: 685px) {
+      border-color: transparent #fff transparent transparent;
+    }
+  }
+
+  &__next span {
+    border-color: transparent transparent transparent #fff;
+    left: 35%;
+
+    @media screen and (max-width: 685px) {
+      border-color: transparent transparent transparent #fff;
+    }
+  }
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four {
+  z-index: 1;
+  animation: scroll 1s ease-in-out;
+}
+
+#slider__nav {
+  width: 100%;
+  bottom: 12%;
+  height: 11px;
+  position: absolute;
+  text-align: center;
+  cursor: default;
+}
+
+#i1:checked ~ #slider__nav #dot1 {
+  background: $bgc-red;
+}
+
+#i2:checked ~ #slider__nav #dot2 {
+  background: $bgc-green;
+}
+
+#i3:checked ~ #slider__nav #dot3 {
+  background: $bgc-blue;
+}
+
+#i4:checked ~ #slider__nav #dot4 {
+  background: $bgc-yellow;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
   }
 }

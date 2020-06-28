@@ -34,12 +34,18 @@
   }
 
   &__card {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 69px;
 
     @media (max-width: $breakpoint-large-tablet) {
-      flex-direction: column;
-      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 0;
+      row-gap: 40px;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-columns: 1fr;
     }
   }
 }
