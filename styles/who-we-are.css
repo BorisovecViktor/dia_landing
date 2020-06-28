@@ -1,0 +1,33 @@
+.who-we-are__container {
+  max-width: 754px;
+  margin: 0 auto;
+  padding: 148px 227px; }
+  @media (max-width: 1399px) {
+    .who-we-are__container {
+      padding: 148px 127px; } }
+  @media (max-width: 1199px) {
+    .who-we-are__container {
+      padding: 148px 30px; } }
+  @media (max-width: 1023px) {
+    .who-we-are__container {
+      padding: 260px 30px 100px;
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .who-we-are__container {
+      padding: 120px 30px 100px; } }
+
+.who-we-are__header {
+  font-size: 32px;
+  line-height: 48px; }
+  @media (max-width: 1023px) {
+    .who-we-are__header {
+      font-size: 28px;
+      line-height: 40px; } }
+
+.who-we-are__text {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px; }
+
+/*# sourceMappingURL=who-we-are.css.map */

@@ -1,0 +1,161 @@
+@media (max-width: 1023px) {
+  .case__grid {
+    justify-items: center;
+    display: grid; }
+    .case__grid:last-child {
+      grid-column: 1 / 3; } }
+
+@media (max-width: 767px) {
+  .case__grid:last-child {
+    grid-column: auto; } }
+
+.case__container {
+  text-align: center;
+  max-width: 314px;
+  height: 494px;
+  padding: 87px 32px 32px;
+  -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+          box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+  border-radius: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: animate 2s linear infinite;
+          animation: animate 2s linear infinite;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s; }
+  .case__container--gilad {
+    background: #b4e0ee url(../images/testimonials/sparkles.png); }
+  .case__container--hawkins {
+    background: #eedca1 url(../images/testimonials/sparkles.png); }
+  .case__container--grover {
+    background: #f3afaf url(../images/testimonials/sparkles.png); }
+  @media (max-width: 1023px) {
+    .case__container:not(:last-child) {
+      margin-bottom: 50px; } }
+
+@media (max-width: 1023px) and (max-width: 559px) {
+  .case__container {
+    max-width: 280px;
+    height: 454px; } }
+  .case__container:hover {
+    -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.3);
+            box-shadow: 0 9px 18px rgba(37, 41, 49, 0.3); }
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -64px; } }
+
+@keyframes animate {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 0 -64px; } }
+
+.case__photo {
+  position: relative;
+  margin: 0 auto;
+  width: 140px;
+  height: 140px; }
+  .case__photo::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 139px;
+    height: 56px;
+    background-color: #56ccf2;
+    border-radius: 30px;
+    -webkit-transform: rotate(-60deg) translate(50%, -50%);
+            transform: rotate(-60deg) translate(50%, -50%); }
+  .case__photo::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: -50%;
+    width: 139px;
+    height: 56px;
+    background-color: #56ccf2;
+    border-radius: 30px;
+    -webkit-transform: rotate(-60deg) translate(-50%, 50%);
+            transform: rotate(-60deg) translate(-50%, 50%); }
+  .case__photo--yellow::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 139px;
+    height: 56px;
+    background-color: #56ccf2;
+    border-radius: 30px;
+    -webkit-transform: rotate(-60deg) translate(50%, -50%);
+            transform: rotate(-60deg) translate(50%, -50%);
+    background-color: #fcc304; }
+  .case__photo--yellow::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: -50%;
+    width: 139px;
+    height: 56px;
+    background-color: #56ccf2;
+    border-radius: 30px;
+    -webkit-transform: rotate(-60deg) translate(-50%, 50%);
+            transform: rotate(-60deg) translate(-50%, 50%);
+    background-color: #fcc304; }
+  .case__photo--red::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 139px;
+    height: 56px;
+    background-color: #56ccf2;
+    border-radius: 30px;
+    -webkit-transform: rotate(-60deg) translate(50%, -50%);
+            transform: rotate(-60deg) translate(50%, -50%);
+    background-color: #f25656; }
+  .case__photo--red::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: -50%;
+    width: 139px;
+    height: 56px;
+    background-color: #56ccf2;
+    border-radius: 30px;
+    -webkit-transform: rotate(-60deg) translate(-50%, 50%);
+            transform: rotate(-60deg) translate(-50%, 50%);
+    background-color: #f25656; }
+
+.case__img {
+  position: relative;
+  border-radius: 50%;
+  z-index: 1; }
+
+.case__quotes {
+  width: 21px;
+  height: 19px;
+  margin: 82px auto 11px;
+  background-image: url(../images/testimonials/quotes-blue.svg);
+  background-position: center; }
+  .case__quotes--yellow {
+    background-image: url(../images/testimonials/quotes-yellow.svg); }
+  .case__quotes--red {
+    background-image: url(../images/testimonials/quotes-red.svg); }
+  @media (max-width: 559px) {
+    .case__quotes {
+      margin-top: 42px; } }
+
+.case__text {
+  font-weight: 600; }
+
+.case__u-name {
+  margin: 16px 0 4px;
+  font-weight: 600;
+  color: #253757; }
+
+/*# sourceMappingURL=testimonials-case.css.map */

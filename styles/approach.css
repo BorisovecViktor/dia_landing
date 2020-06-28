@@ -1,0 +1,151 @@
+.approach {
+  margin-left: 121px;
+  background-color: #ff9c8e;
+  border-bottom-left-radius: 200px;
+  border-top-left-radius: 200px; }
+  @media (max-width: 1023px) {
+    .approach {
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 50px; } }
+  @media (max-width: 1399px) {
+    .approach {
+      margin-left: 0; } }
+  .approach__container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1146px;
+    height: 976px;
+    margin: 0 auto;
+    padding: 0 106px 0 227px; }
+    @media (max-width: 1399px) {
+      .approach__container {
+        padding: 0 127px; } }
+    @media (max-width: 1199px) {
+      .approach__container {
+        padding: 0 30px; } }
+    @media (max-width: 1023px) {
+      .approach__container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: auto;
+        padding: 0; } }
+  .approach__info {
+    max-width: 362px;
+    margin-top: 204px; }
+    @media (max-width: 1023px) {
+      .approach__info {
+        margin-top: 60px;
+        padding: 0 30px; } }
+    @media (max-width: 559px) {
+      .approach__info {
+        text-align: center; } }
+  .approach__title {
+    color: #fff; }
+  .approach__header {
+    margin: 16px 0 32px;
+    font-size: 32px;
+    line-height: 48px;
+    color: #fff; }
+    @media (max-width: 1023px) {
+      .approach__header {
+        font-size: 28px;
+        line-height: 40px; } }
+  .approach__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    @media (max-width: 559px) {
+      .approach__item {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+  .approach__item:not(:last-child) {
+    margin-bottom: 64px; }
+    @media (max-width: 1023px) {
+      .approach__item:not(:last-child) {
+        font-size: 28px;
+        margin-bottom: 30px; } }
+  .approach__img {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 50%; }
+    .approach__img:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 26px;
+      height: 26px;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      background-image: url(../images/features/features-item-icon-1.svg);
+      background-position: center; }
+    .approach__img--calendar:after {
+      background-image: url(../images/features/features-item-icon-2.svg); }
+    .approach__img--document:after {
+      background-image: url(../images/features/features-item-icon-3.svg); }
+  .approach__text {
+    max-width: 264px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #fff; }
+    @media (max-width: 559px) {
+      .approach__text {
+        margin-top: 20px; } }
+  .approach__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 687px;
+    height: 680px;
+    max-width: 687px;
+    background-image: url(../images/approach/Photo.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 200px; }
+    @media (max-width: 1399px) {
+      .approach__photo {
+        width: 607px;
+        height: 600px; } }
+    @media (max-width: 1023px) {
+      .approach__photo {
+        position: static;
+        margin-top: 50px;
+        width: 100%;
+        max-width: 100%;
+        height: 550px;
+        border-top-left-radius: 50px;
+        background-position: bottom; } }
+    @media (max-width: 767px) {
+      .approach__photo {
+        height: 400px; } }
+    @media (max-width: 559px) {
+      .approach__photo {
+        margin-top: 30px;
+        height: 350px; } }
+
+/*# sourceMappingURL=approach.css.map */

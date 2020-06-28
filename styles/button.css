@@ -1,0 +1,25 @@
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 226px;
+  height: 56px;
+  background-color: #ff9c8e;
+  border-radius: 64px;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  cursor: pointer; }
+  .button--short {
+    height: 50px; }
+  .button:hover {
+    background-color: #ff7e6c;
+    -webkit-box-shadow: 0 0 0 2px white, 0 0 0 4px #ff9c8e;
+            box-shadow: 0 0 0 2px white, 0 0 0 4px #ff9c8e; }
+
+/*# sourceMappingURL=button.css.map */

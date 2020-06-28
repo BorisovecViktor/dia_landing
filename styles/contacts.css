@@ -1,0 +1,51 @@
+.contacts {
+  width: 362px;
+  padding-right: 90px; }
+  @media (max-width: 1399px) {
+    .contacts {
+      padding-right: 50px; } }
+  @media (max-width: 1199px) {
+    .contacts {
+      padding-right: 0; } }
+  @media (max-width: 559px) {
+    .contacts {
+      width: 100%; } }
+  .contacts__header {
+    margin-bottom: 56px;
+    font-size: 32px;
+    line-height: 48px;
+    color: #fff; }
+    @media (max-width: 1023px) {
+      .contacts__header {
+        font-size: 28px;
+        line-height: 40px; } }
+  .contacts__visit {
+    margin: 48px 0; }
+  .contacts__title {
+    color: #fff;
+    opacity: 0.5;
+    margin-bottom: 8px; }
+  .contacts__link {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .contacts__link:hover {
+      color: #c7c2c2; }
+  .contacts__socials svg {
+    padding: 8px;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .contacts__socials svg:not(:last-child) {
+    margin-right: 16px; }
+  .contacts__fb:hover {
+    fill: #3c5898; }
+  .contacts__twit:hover {
+    fill: #00acee; }
+  .contacts__inst:hover {
+    fill: #dd2a7b; }
+
+/*# sourceMappingURL=contacts.css.map */

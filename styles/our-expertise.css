@@ -1,0 +1,42 @@
+.our-expertise {
+  background-color: #fff; }
+  .our-expertise__container {
+    max-width: 1146px;
+    margin: 0 auto;
+    padding: 128px 227px 134px; }
+    @media (max-width: 1399px) {
+      .our-expertise__container {
+        padding: 128px 127px 134px; } }
+    @media (max-width: 1199px) {
+      .our-expertise__container {
+        padding: 128px 30px 134px; } }
+    @media (max-width: 1023px) {
+      .our-expertise__container {
+        padding: 100px 30px; } }
+  .our-expertise__header {
+    margin-bottom: 64px;
+    text-align: center;
+    font-size: 52px;
+    line-height: 78px; }
+    @media (max-width: 1023px) {
+      .our-expertise__header {
+        font-size: 35px;
+        line-height: 50px; } }
+  .our-expertise__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 69px;
+       -moz-column-gap: 69px;
+            column-gap: 69px; }
+    @media (max-width: 1023px) {
+      .our-expertise__card {
+        grid-template-columns: repeat(2, 1fr);
+        -webkit-column-gap: 0;
+           -moz-column-gap: 0;
+                column-gap: 0;
+        row-gap: 40px; } }
+    @media (max-width: 767px) {
+      .our-expertise__card {
+        grid-template-columns: 1fr; } }
+
+/*# sourceMappingURL=our-expertise.css.map */

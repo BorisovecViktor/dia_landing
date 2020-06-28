@@ -1,0 +1,32 @@
+.scroll-button {
+  position: fixed;
+  -webkit-transform: translateX(2000px);
+          transform: translateX(2000px);
+  bottom: 15%;
+  right: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.6; }
+  .scroll-button:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  @media (max-width: 559px) {
+    .scroll-button {
+      bottom: 10%;
+      right: 8%;
+      width: 40px;
+      height: 40px; } }
+
+.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); }
+
+/*# sourceMappingURL=scroll.css.map */

@@ -1,0 +1,48 @@
+.vision {
+  height: 691px;
+  background-color: #fff;
+  background-image: url(../images/vision/shapes.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media (max-width: 1023px) {
+    .vision {
+      height: auto; } }
+  .vision__container {
+    max-width: 754px;
+    margin: 0 auto;
+    padding: 198px 227px;
+    text-align: center; }
+    @media (max-width: 1399px) {
+      .vision__container {
+        padding: 198px 127px; } }
+    @media (max-width: 1199px) {
+      .vision__container {
+        padding: 198px 30px; } }
+    @media (max-width: 1023px) {
+      .vision__container {
+        padding: 150px 30px;
+        text-align: center; } }
+  .vision__header {
+    font-size: 52px;
+    line-height: 78px; }
+    @media (max-width: 1023px) {
+      .vision__header {
+        font-size: 28px;
+        line-height: 40px; } }
+  .vision__text {
+    max-width: 754px;
+    margin: 24px 0 64px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px; }
+    @media (max-width: 1023px) {
+      .vision__text {
+        font-size: 20px;
+        line-height: 30px; } }
+  .vision__link {
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 22px; }
+
+/*# sourceMappingURL=vision.css.map */

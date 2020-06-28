@@ -1,0 +1,50 @@
+.testimonials__container {
+  max-width: 1146px;
+  margin: 0 auto;
+  padding: 148px 227px 168px; }
+  @media (max-width: 1399px) {
+    .testimonials__container {
+      padding: 148px 127px 168px; } }
+  @media (max-width: 1199px) {
+    .testimonials__container {
+      padding: 148px 30px 168px; } }
+  @media (max-width: 1023px) {
+    .testimonials__container {
+      padding: 60px 0;
+      text-align: center; } }
+
+.testimonials__header {
+  margin: 16px 0 85px;
+  font-size: 32px;
+  line-height: 48px; }
+  @media (max-width: 1023px) {
+    .testimonials__header {
+      margin: 16px 0 30px; } }
+
+.testimonials__case {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 69px;
+     -moz-column-gap: 69px;
+          column-gap: 69px; }
+  @media (max-width: 1023px) {
+    .testimonials__case {
+      grid-template-columns: repeat(2, 1fr);
+      -webkit-column-gap: 0;
+         -moz-column-gap: 0;
+              column-gap: 0;
+      row-gap: 40px; } }
+  @media (max-width: 767px) {
+    .testimonials__case {
+      grid-template-columns: 1fr; } }
+
+.testimonials__title--gilad {
+  color: #56ccf2; }
+
+.testimonials__title--hawkins {
+  color: #fcc304; }
+
+.testimonials__title--grover {
+  color: #f25656; }
+
+/*# sourceMappingURL=testimonials.css.map */

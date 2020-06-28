@@ -1,0 +1,104 @@
+.process-card {
+  border-radius: 24px;
+  -webkit-box-shadow: 0 9px 18px rgba(37, 41, 49, 0.2);
+          box-shadow: 0 9px 18px rgba(37, 41, 49, 0.2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .process-card:hover {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  .process-card:not(:last-child) {
+    margin-bottom: 30px; }
+  .process-card__container {
+    width: 264px;
+    height: 264px;
+    padding: 32px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #fff;
+    border-radius: 24px; }
+  .process-card__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    height: 24px;
+    font-size: 13px;
+    border-radius: 23px;
+    color: #56ccf2;
+    background-color: rgba(86, 204, 242, 0.1); }
+    @media (max-width: 1023px) {
+      .process-card__header {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex; } }
+    .process-card__header--green {
+      color: #15d850;
+      background-color: rgba(21, 216, 80, 0.1); }
+    .process-card__header--yellow {
+      color: #fcc304;
+      background-color: rgba(252, 201, 29, 0.1); }
+    .process-card__header--red {
+      color: #f25656;
+      background-color: rgba(243, 99, 99, 0.1); }
+  .process-card__text {
+    margin: 24px 0 32px;
+    font-weight: 600; }
+  .process-card__text span {
+    display: block; }
+  .process-card__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer; }
+    .process-card__link:hover .process-card__arrow {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
+    .process-card__link:hover .process-card__button {
+      color: #008aff; }
+  .process-card__arrow {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    background-color: #56ccf2;
+    border-radius: 50%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .process-card__arrow:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      background-image: url(../images/process/arrow.svg);
+      background-repeat: no-repeat; }
+    .process-card__arrow--green {
+      background-color: #15d850; }
+    .process-card__arrow--yellow {
+      background-color: #fcc304; }
+    .process-card__arrow--red {
+      background-color: #f25656; }
+  .process-card__button {
+    font-size: 15px;
+    line-height: 22px;
+    color: #334563;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s; }
+
+/*# sourceMappingURL=process-card.css.map */
